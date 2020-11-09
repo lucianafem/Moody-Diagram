@@ -51,7 +51,7 @@ for i in range(0,Div,1):
     ax.yaxis.set_minor_formatter(matplotlib.ticker.ScalarFormatter())  
     plt.autoscale(enable=True, axis='y')
     plt.minorticks_on
-    # plt.show()   
+    
 flam=[]
 RElam=[]
 for RElaminar in range(700,2300,50):
