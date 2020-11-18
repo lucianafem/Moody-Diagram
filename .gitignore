@@ -29,11 +29,11 @@ Div=tamanho/TAMANHO
 Div=round(Div) 
 
 for i in range(0,Div,1): 
-    Re1lista=[Re1[i:i+TAMANHO] for i in range(0, len(Re1), TAMANHO)]
-    f1lista=[f1[i:i+TAMANHO] for i in range(0, len(f1), TAMANHO)] 
-    f1listaseparada=f1lista[i]
-    p=f1listaseparada[TAMANHO-1] 
-    plt.plot(Re1lista[i],f1lista[i],'-',markersize=2, linewidth=2)
+    Re1list=[Re1[i:i+TAMANHO] for i in range(0, len(Re1), TAMANHO)]
+    f1list=[f1[i:i+TAMANHO] for i in range(0, len(f1), TAMANHO)] 
+    f1list_=f1list[i]
+    p=f1list_[TAMANHO-1] 
+    plt.plot(Re1list[i],f1list[i],'-',markersize=2, linewidth=2)
     plt.title('Moody Diagram',size='xx-large')
     plt.annotate(RUG[i], (1.2*10**8,p),size=10)   
     plt.xlabel('Reynolds Number,Re',{'fontsize': 16})
@@ -51,7 +51,7 @@ for i in range(0,Div,1):
     ax.yaxis.set_minor_formatter(matplotlib.ticker.ScalarFormatter())  
     plt.autoscale(enable=True, axis='y')
     plt.minorticks_on
-    
+
 flam=[]
 RElam=[]
 for RElaminar in range(700,2300,50):
